@@ -1,0 +1,77 @@
+*{
+	box-sizing: border-box;
+
+}
+
+a {
+	text-decoration: none; 
+	color: white;
+}
+body {
+  background: black; 
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding:10px;
+}
+
+header h2 {
+	float: left;
+	font-size: 14px;
+	margin: 0px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+header nav a {
+	color: white;
+	font-size:15px;
+	margin: 10px;
+	padding: 0px 20px;
+	text-transform: uppercase;
+}
+
+header nav a:hover {
+	color:darkgrey;
+}
+
+nav {
+	text-align: right;
+	padding-bottom:10px;
+	font-weight: bold;
+	border-bottom: 1px solid white;
+}
+
+		/* unvisited link */
+		a:link {
+		    color: white;
+		}
+
+		/* visited link */
+		a:visited {
+		    color: white;
+		}
+
+		/* mouse over link */
+		a:hover {
+		    color: white;
+		}
+
+		/* selected link */
+		a:active {
+		    color: white;
+		}
+h1 a {
+	color:white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding:80px 0px;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
