@@ -3,11 +3,11 @@
 }
 
 a {
-	text-decoration: none; 
+	text-decoration: none;
 	color: white;
 }
 body {
-  background: black; 
+  background: black;
   color: white;
   font-family: 'Lato', sans-serif;
   padding:10px;
@@ -33,12 +33,11 @@ header nav a {
 	font-size:15px;
 	padding: 0px 20px;
 	text-transform: uppercase;
-	display: inline;	
+	display: inline;
 }
 
 header nav a:hover {
 	color:red;
-
 }
 
 nav {
@@ -48,59 +47,73 @@ nav {
 	font-weight: bold;
 	border-bottom: 1px solid white;
 }
+	a:link {
+	    color: white;
+	}
+	a:visited {
+		color: white;
+	}
+	a:hover {
+		color: red;
+	}
+	a:active {
+	    color: red;
+	}
 
-		/* unvisited link */
-		a:link {
-		    color: white;
-		}
-
-		/* visited link */
-		a:visited {
-		    color: white;
-		}
-
-		/* mouse over link */
-		a:hover {
-		    color: red;
-		}
-
-		/* selected link */
-		a:active {
-		    color: red;
-		}
 h1 a {
 	color:white;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-img{
-    display: block;
-    margin: auto;
-    padding:100px 0px;
+/*.camera-back{
+  	display: table;
+  	margin: auto;
+    margin-top:80px;
+}*/
+
+/*.camera-img {
+	position: relative;
+}*/
+.tooltip{
+    border-radius: 50%;
+    border: 1px solid red;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    /* bottom: 124px; */
+    left: 495px;
+    bottom: -42px;
+    /* right: 0; */
 }
 
-h4{
+.tooltip2{
 	border-radius: 50%;
-	border:1px solid red;
+	border:1px solid blue;
 	background:rgba(255,255,255,0.6);
 	width: 40px;
 	height: 40px;
-	position:relative;
-	bottom:402px;
-	left:772px;
+	position:absolute;
+	bottom:-87px;
+	/*left:0px;*/
+	right:0;
+/*  how do you make this position relative to the image, not the other button??
+why do both buttons display the message of the first one??  */
 }
 
-.text-box{ 
-	background:rgba(255,255,255,0.6);
+.tooltipster-box{
+	background:rgba(255,255,255,0.85);
 	color:black;
-	width:160px;
-	padding:20px;
-	position:relative;
-	bottom:307px;
-	left:838px;
+	width:350px;
+	padding: 25px;
 }
 
-
-
-/*# sourceMappingURL=style.css.map */
+.site-content {
+	background-image: url(../images/back.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 400px; /* you can change this height after */
+}
