@@ -1,5 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="site description goes here">
+    	<meta name="keywords" content="site, keywords, go, here">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<title>final project</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="tooltipster.main.css" />
+	
+	</head>
+
+	<body>
+		<div class="site-container">
+			<header class="site-header">
+	
+				<h1><a href="index.html">Master Manual</a></h1>
+				<h2>Master the manual settings on your mirrorless camera</h2>
+				
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</nav>
+			</header>
+	
+		<main class="site-content">
+
+		    <div class="tooltip tooltip-1" title="In digital photography ISO measures the sensitivity of the image sensor – the lower the number the less sensitive your camera is to light and the finer the grain. Higher ISO settings are generally used in darker situations to get faster shutter speeds." /></div>
+
+		    <div class="tooltip tooltip-2" title="text description of the second button" /></div>
+
+		</main>
+	
+		<footer class="site-footer">
+			&copy; 2017
+		</footer>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+
+	    <script>
+		$(document).ready(function() {
+		$('.tooltip').tooltipster();
+
+		$('.tooltip-right').tooltipster();
+		});
+		</script>
+
+		</div>
+		<!-- .site-container -->
+
+
+	</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="site description goes here">
@@ -26,13 +85,12 @@
 			</nav>
 		</header>
 
-		<main class="site-content ">
-			<!-- <img class="camera-img" src="images/back.png"> -->
+		<main class="site-content">
 
-			<div class="tooltip" title="In digital photography ISO measures the sensitivity of the image sensor – the lower the number the less sensitive your camera is to light and the finer the grain. Higher ISO settings are generally used in darker situations to get faster shutter speeds."></div>
+			<div class="tooltip tooltip-1" title="In digital photography ISO measures the sensitivity of the image sensor – the lower the number the less sensitive your camera is to light and the finer the grain. Higher ISO settings are generally used in darker situations to get faster shutter speeds."></div>
 
-			<!-- <div class="tooltip" title="text description of the second button"></div> -->
-			<div class="tooltip2" title="text description of the second button"></div>
+			<div class="tooltip tooltip-2" title="text description of the second button"></div>
+
 		</main>
 
 		<footer class="site-footer">
@@ -45,8 +103,7 @@
 		<script>
 		// $(document).ready(function() {
 		// 	$('.tooltip').tooltipster();
-		//
-		// 	$('.tooltip-right').tooltipster();
+
 		// });
 		</script>
 
