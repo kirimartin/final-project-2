@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	console.log('it works');
 	
-	$('.tooltip-1').tooltipster();
+// click on a hotspot and text appears
+// click again to minimize text
 
 	$('.tooltip-1').tooltipster({
 		position:'right',
@@ -9,18 +10,42 @@ $(document).ready(function(){
 		animation:'grow'
 	})
 
-	$('.tooltip').tooltipster();
-
-	$('.tooltip').tooltipster({
-		position:'right',
+	$('.tooltip-2').tooltipster({
+		position:'left',
 		trigger:'click',
 		animation:'grow'
 	})
-	// why doesnt this work?
+
+	$('.tooltip-3').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+
+	$('.tooltip-4').tooltipster({
+		position:'left',
+		trigger:'click',
+		animation:'grow'
+	})
+
+	$('.tooltip-5').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+
+	$('.tooltip-6').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+
 
 
 });
 
 
+// hotspots appear when you scroll over the camera
 
+// selected hotspot stays visible, others dispear
 
