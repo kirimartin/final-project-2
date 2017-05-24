@@ -28,6 +28,16 @@ header h2 {
 	margin: 15px 20px;
 }
 
+@media screen and (max-width:1040px) {
+	header h2 {
+		float:left;
+		clear:both;
+		padding:0;
+		margin-left:10px;
+		font-size: 12px;
+		}
+	}
+
 header nav a {
 	color: white;
 	font-size:15px;
@@ -39,6 +49,7 @@ header nav a {
 header nav a:hover {
 	color:red;
 }
+
 
 nav {
 	text-align: right;
@@ -60,12 +71,37 @@ nav {
 	    color: red;
 	}
 
+
+
+@media screen and (max-width:640px) {
+	nav {
+		float:left;
+		padding:0;
+		color:red;
+		border: 1px solid white;
+		width:100%;
+		text-align: left;
+		margin-bottom:20px;
+		}
+	}
+
+
+
 h1 a {
 	color:white;
 	font-weight: bold;
 	text-transform: uppercase;
-
 }
+
+/*.site-footer {
+	padding:0px;
+	border-top:1px solid white;
+	display: inline block;
+	float:bottom;
+	clear:all;
+}*/
+
+
 
 .tooltipster-box{
 	background:rgba(255,255,255,0.85);
@@ -84,64 +120,125 @@ h1 a {
     position: absolute;
     left: 495px;
     bottom: -42px;
+    display:block;
+    z-index:10;
 }
 
 .tooltip-1{
-	bottom:85px;
-	left:802px;
+	bottom:34%;
+	left:65%;
 }
 .tooltip-2{
-	bottom:85px;
-	left:712px;
+	bottom:34%;
+    left: 57.5%;
 }
 .tooltip-3{
-	bottom: 126px;
-    left: 757px
+	bottom: 41%;
+    left: 61%;
 }
 .tooltip-4{
-    bottom: 181px;
-    left: 708px
+    bottom: 49.5%;
+    left: 57%;
 }
 .tooltip-5{
-    bottom: 208px;
-    left: 734px
+	bottom: 53.8%;
+    left: 59.2%;
 }
 .tooltip-6{
-    bottom: 255px;
-    left: 680px
+	bottom: 61.5%;
+    left: 54.7%;
 }
 
-.site-content {
+
+
+											/*  BACK IMAGE  */
+
+.site-content-back {
 	background-image: url(../images/back.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: 400px;
+	height: 650px;
+	max-width: 100%;
+	padding-bottom: 6rem;
 }
+
+ .img-back-sm{ 
+	height:15%;	
+	border:1px solid red;
+	padding: 10px;
+	margin:5px;
+	display: block;
+	position:relative;
+	top:115px;
+ }
+
 
 											/*  TOP IMAGE  */
 
-.img-top{ 
-	width:150px;
+.site-content-top {
+	background-image: url(../images/top.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 650px;
+	max-width: 100%;
+	padding-bottom: 6rem;
+}
+
+ .img-top-sm{ 
+	height:15%;	
 	border:1px solid red;
 	padding: 10px;
 	margin:5px;
+	display: block;
+	position:relative;
+	top:115px;
  }
 
- .img-front{ 
-	width:150px;
+
+ @media screen and (max-width:1040px) {
+	.img-top {
+		top:425px;	
+		}
+	}
+
+
+ 										/*	  FRONT IMAGE  */
+ 
+ .site-content-front {
+	background-image: url(../images/front.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 650px;
+	max-width: 100%;
+	padding-bottom: 6rem;
+}
+.img-front-sm{ 
+	height:15%;	
 	border:1px solid red;
 	padding: 10px;
 	margin:5px;
+	display: block;
+	position:relative;
+	top:115px;
  }
+
+  @media screen and (max-width:1040px) {
+	.img-front {
+		top:322px;
+		left: 105px;
+		}
+	}
+
+
 
 
 											/*CONTACT PAGE */
-
-
 
 .visually-hidden {
 	border: 0;
@@ -154,25 +251,25 @@ h1 a {
 	width: 1px;
 }
 
-
 .contact-page{
-    width: 600px;
     margin: 80px auto;
 }
 
-
 .form-field {
+	width: 600px;
 	margin-bottom:20px;
  }
 
 
 /*whole form*/
 form, input, textarea {
+	width: 600px;
     font-family: "georgia", serif; 
-    font-size: 18px;
+    font-size: 16px;
+    margin:auto;
 }
 
-input {
+input, textarea {
 	padding:20px;
   	border: 0px;
   	background-color:#f6f6f6;
@@ -196,19 +293,63 @@ textarea:focus {
 	display: block;
 	width: 100%;
 }
-.message{
-	height:500px;
-}
 
 /*continue button*/
 input[type="submit"] {
-  background-color:red;
+  background-color:rgba(255,255,255,0.2);;
   color:white;
-  border-bottom:4px solid darkred;
-  border-radius:3px;
-  width:250px;
+  text-align: center;
+  border:4px solid red;
+  width:20%;
   font-family:sans-serif;
-  margin-top: 55px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
+ @media screen and (max-width:1040px) {
+	.contact-page {
+		width:100%;
+		margin-top: 0px;
+		}
+	}
+
+
+											/*  ABOUT PAGE */
+
+.about{
+	margin:auto;
+	padding-top: 60px;
+	text-align: left;
+	display: block;
+	float:left;
+}
+
+.about-text{
+	width: 80%;
+}
+
+.kiri-img{ 
+	max-width: 80%; 
+	padding:10px;
+	border: 1px solid red;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+											/*  FOOTER */
+
+.footer {
+	border-top:1px solid white;
+	padding:0px;
+	position: absolute;
+	bottom:-10%;
+	width: 100%;
+}
 
