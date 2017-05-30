@@ -73,7 +73,7 @@ nav {
 
 
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:667px) {
 	nav {
 		float:left;
 		padding:0;
@@ -151,7 +151,7 @@ h1 a {
 
 
 
-											/*  BACK IMAGE  */
+											/*  BACK IMAGE */
 
 .site-content-back {
 	background-image: url(../images/back.png);
@@ -160,8 +160,9 @@ h1 a {
 	background-position: center;
 	position: relative;
 	height: 650px;
-	max-width: 100%;
+	width: 100%;
 	padding-bottom: 6rem;
+
 }
 
  .img-back-sm{ 
@@ -173,6 +174,12 @@ h1 a {
 	position:relative;
 	top:115px;
  }
+
+  @media screen and (max-width:1040px) {
+	.img-back-sm {
+		top:425px;	
+		}
+	}
 
 
 											/*  TOP IMAGE  */
@@ -200,13 +207,13 @@ h1 a {
 
 
  @media screen and (max-width:1040px) {
-	.img-top {
+	.img-top-sm {
 		top:425px;	
 		}
 	}
 
 
- 										/*	  FRONT IMAGE  */
+ 										/*	  FRONT IMAGE + BREAKPOINTS */
  
  .site-content-front {
 	background-image: url(../images/front.png);
@@ -229,10 +236,20 @@ h1 a {
  }
 
   @media screen and (max-width:1040px) {
-	.img-front {
+	.img-front-sm {
 		top:322px;
 		left: 105px;
 		}
+	}
+/*IPHONE*/
+	 @media screen and (max-width:667px) {
+    .tooltip-1{left: 78.5%}
+    .tooltip-2{left: 63.5%}
+    .tooltip-3{left: 71%}
+    .tooltip-4{left: 63.5%}
+    .tooltip-5{left: 67.5%}
+    .tooltip-6{left: 59%}    
+
 	}
 
 
@@ -270,7 +287,7 @@ form, input, textarea {
 }
 
 input, textarea {
-	padding:20px;
+	padding:10px;
   	border: 0px;
   	background-color:#f6f6f6;
 }
@@ -337,6 +354,12 @@ input[type="submit"] {
 	margin-bottom: 20px;
 }
 
+											/*  GALLERY PAGE */
+.gallery { 
+	text-align: center;
+	margin:100px;
+	border: 1px solid red; 
+}
 
 
 
