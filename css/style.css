@@ -433,7 +433,7 @@ input[type="submit"] {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -537,9 +537,9 @@ input[type="submit"] {
 
 .footer {
 	border-top:1px solid white;
-	padding:0px;
+	margin-top:40px;
 	position: absolute;
-	bottom:-10%;
+/*	bottom:-10%;*/
 	width: 100%;
 }
 
