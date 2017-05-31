@@ -113,9 +113,9 @@ h1 a {
 
 .tooltip{
     border-radius: 50%;
-    border: 1px solid red;
-    background: rgba(255,255,255,0.6);
-    width: 30px;
+    border: 1px solid yellow;
+  /*  background: rgba(255,255,255,0.6);*/
+    width: 55px;
     height: 30px;
     position: absolute;
     left: 495px;
@@ -125,33 +125,33 @@ h1 a {
 }
 
 .tooltip-1{
-	bottom:34%;
-	left:65%;
+	bottom: 35%;
+    left: 66%;
 }
 .tooltip-2{
-	bottom:34%;
-    left: 57.5%;
+    bottom: 35%;
+    left: 58%;
 }
 .tooltip-3{
-	bottom: 41%;
-    left: 61%;
+	bottom: 42%;
+    left: 62%;
 }
 .tooltip-4{
-    bottom: 49.5%;
-    left: 57%;
+    bottom: 51%;
+    left: 58%;
 }
 .tooltip-5{
-	bottom: 53.8%;
-    left: 59.2%;
+	bottom: 55.8%;
+    left: 60.2%;
 }
 .tooltip-6{
-	bottom: 61.5%;
-    left: 54.7%;
+	bottom: 63.5%;
+    left: 55%;
 }
 
 
 
-											/*  BACK IMAGE */
+																				/*  BACK IMAGE */
 
 .site-content-back {
 	background-image: url(../images/back.png);
@@ -182,7 +182,7 @@ h1 a {
 	}
 
 
-											/*  TOP IMAGE  */
+																			/*  TOP IMAGE  */
 
 .site-content-top {
 	background-image: url(../images/top.png);
@@ -213,7 +213,7 @@ h1 a {
 	}
 
 
- 										/*	  FRONT IMAGE + BREAKPOINTS */
+ 																/*	  FRONT IMAGE + BREAKPOINTS */
  
  .site-content-front {
 	background-image: url(../images/front.png);
@@ -252,10 +252,78 @@ h1 a {
 
 	}
 
+/*IPAD*/
+	 @media screen and (max-width : 768px) {
+    .tooltip-1{left: 77%}
+    .tooltip-2{left: 64%}
+    .tooltip-3{left: 71%}
+    .tooltip-4{left: 63.5%}
+    .tooltip-5{left: 67.5%}
+    .tooltip-6{left: 59%}    
+	}
+
+/*extra breakpoints*/
+	 @media screen and (max-width : 1050px) {
+    .tooltip-1{left: 69%}
+    .tooltip-2{left: 60%}
+    .tooltip-3{left: 65%}
+    .tooltip-4{left: 59.5%}
+    .tooltip-5{left: 62.5%}
+    .tooltip-6{left: 56%}    
+	}
+	 @media screen and (max-width : 1050px) {
+    .tooltip-1{left: 69%}
+    .tooltip-2{left: 60%}
+    .tooltip-3{left: 65%}
+    .tooltip-4{left: 59.5%}
+    .tooltip-5{left: 62.5%}
+    .tooltip-6{left: 56%}    
+	}
+	@media screen and (max-width : 1075px) {
+    .tooltip-1{left: 69%}
+	}
+	@media screen and (max-width : 930px) {
+    .tooltip-1{left: 72%}
+    .tooltip-3{left: 67%}
+	}
+	@media screen and (max-width : 800px) {
+    .tooltip-1{left: 75%}
+    .tooltip-2{left: 63%}
+    .tooltip-3{left: 69%}
+    .tooltip-4{left: 62.5%}
+    .tooltip-5{left: 65.5%}
+    .tooltip-6{left: 58%}
+	}
+	@media screen and (max-width : 710px) {
+    .tooltip-1{left: 78%}
+	}
+	@media screen and (max-width : 630px) {
+    .tooltip-1{left:78%; top:59%;}
+    .tooltip-2{top:59%;}
+    .tooltip-6{top:33%;}
+    .tooltip-3{top:52%;}
+	}
+/*  IPHONE 5S  */
+	@media screen and (max-width : 560px) {
+    .tooltip-1{left:78%; top:58%;}
+    .tooltip-2{top:58%;}
+    .tooltip-3{top:52%;}
+    .tooltip-4{top:45%;}
+    .tooltip-5{top:41%;}
+    .tooltip-6{top:35%;}
+	}
+	@media screen and (max-width : 500px) {
+	.tooltip{width:40px; height:25px;}
+    .tooltip-1{top:57%;}
+    .tooltip-2{top:57%;}
+    .tooltip-4{top:46%;}
+    .tooltip-5{left:67%; top:42%;}
+    .tooltip-6{top:37%;}
+	}
 
 
 
-											/*CONTACT PAGE */
+																				/*CONTACT PAGE */
 
 .visually-hidden {
 	border: 0;
@@ -331,7 +399,7 @@ input[type="submit"] {
 	}
 
 
-											/*  ABOUT PAGE */
+																				/*  ABOUT PAGE */
 
 .about{
 	margin:auto;
@@ -354,11 +422,94 @@ input[type="submit"] {
 	margin-bottom: 20px;
 }
 
-											/*  GALLERY PAGE */
-.gallery { 
-	text-align: center;
-	margin:100px;
-	border: 1px solid red; 
+																				/*  GALLERY PAGE */
+
+
+
+.slideshow-container {
+  max-width: 100%;
+  margin: auto;
+  margin-top:40px;
+  padding:10px;
+
+}
+
+/*.mySlides {
+    display: none;
+}*/
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text{
+  color: #f2f2f2;
+  font-size: 18px;
+  text-align: right;
+  margin-right:10px;
+  padding:10px;
+  display:inline block;
+  border: 1px solid red;
+  float:left;
+}
+ul{ 
+	list-style-type: none; 
+}
+
+.gallery-img  {
+	border: 1px solid blue;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
@@ -366,7 +517,7 @@ input[type="submit"] {
 
 
 
-											/*  FOOTER */
+																				/*  FOOTER */
 
 .footer {
 	border-top:1px solid white;
