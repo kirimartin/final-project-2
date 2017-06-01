@@ -5,13 +5,13 @@ $(document).ready(function(){
 // click again to minimize text
 
 	$('.tooltip-1').tooltipster({
-		position:'right',
+		position:'top',
 		trigger:'click',
 		animation:'grow'
 	})
 
 	$('.tooltip-2').tooltipster({
-		position:'left',
+		position:'top',
 		trigger:'click',
 		animation:'grow'
 	})
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	})
 
 	$('.tooltip-4').tooltipster({
-		position:'left',
+		position:'top',
 		trigger:'click',
 		animation:'grow'
 	})
