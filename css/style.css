@@ -475,11 +475,12 @@ input[type="submit"] {
 	text-align: center;
 	width:100%;
 	border: 1px solid red;
+	
 }
 
-.kiri-img{ 
+.logo{ 
 	width: 45%; 
-	padding:20px;
+	padding:0px;
 	float: left;
 	margin-right: 20px;
 }
@@ -489,11 +490,12 @@ input[type="submit"] {
 	padding:0px 40px;
 	float:left;
 	text-align: left;
+	
 }
 
 
 @media screen and (max-width:825px) {
-	.kiri-img {
+	.logo {
 		width:60%;
 		float:none;
 		text-align: center;
@@ -505,7 +507,7 @@ input[type="submit"] {
 	}
 }
 @media screen and (max-width:770px) {
-	.kiri-img {
+	.logo {
 		width:70%;
 		text-align: center;
 		}
@@ -650,13 +652,6 @@ input[type="submit"] {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-
-
-
-
-
-
 
 
 
