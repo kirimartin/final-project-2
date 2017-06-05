@@ -31,6 +31,7 @@ header h2 {
 	float: left;
 	font-size: 14px;
 	font-style: italic;
+	font-weight: lighter ;
 	display: inline;
 	margin: 15px 20px;
 }
@@ -161,8 +162,8 @@ h1 a {
 																/*   THUMBNAILS + BREAKPOINTS  */
  .thumb-container{
 	width:10%;
-/*	border:1px dotted yellow;*/
-	padding:90px 10px;
+/*	border:1px dotted yellow;
+*/	padding:90px 10px;
 	margin:5px;
  }
 
@@ -195,7 +196,7 @@ h1 a {
 	position: relative;
 	height: 650px;
 	width: 100%;
-	padding-bottom: 6rem;
+	padding-bottom:6rem;
 }
 
 @media screen and (max-width:770px) {
@@ -400,11 +401,14 @@ h1 a {
 }
 
 .contact-page{
-    margin: 80px auto;
+    margin: 60px auto;
 }
 
 .form-field {
 	margin-bottom:20px;
+ }
+ h3{
+ 	text-align: center;
  }
 
 
@@ -467,8 +471,7 @@ input[type="submit"] {
 /*																				  ABOUT PAGE */
 
 .about{
-	margin-top: 40px;
-	margin-bottom: 20px;
+	margin: 60px auto;
 	text-align: center;
 	width:100%;
 	border: 1px solid red;
@@ -488,9 +491,6 @@ input[type="submit"] {
 	text-align: left;
 }
 
-.about-links{
-	padding-top: 40px;
-}
 
 @media screen and (max-width:825px) {
 	.kiri-img {
@@ -518,7 +518,7 @@ input[type="submit"] {
 /*																				  GALLERY PAGE 
 */
 
-* {box-sizing:border-box}
+
 
 
 .slideshow-container {
@@ -531,7 +531,7 @@ input[type="submit"] {
 .tooltip-13 {
 	border:2px solid red;
 	background-color:rgba(255,255,255,0.1);
-	color:red;
+	color:white;
 	padding:5px;
 	width:30px;
 	height:30px;
@@ -662,14 +662,13 @@ input[type="submit"] {
 
 																				/*  FOOTER */
 
-.footer {
+.footer{
 	border-top:1px solid white;
-	margin-top:40px;
+	margin-top:40px auto;
 	position: absolute;
 	bottom:0%;
 	width: 100%;
 	max-width: 1200px;
-	margin:auto;
 	text-align: center;
 }
 
@@ -681,7 +680,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width:960px) {
-.footer {
+	.footer{
 	position: relative;
 	bottom:0%;
 	margin-top: 40px;
