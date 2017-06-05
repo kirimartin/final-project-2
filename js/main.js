@@ -39,6 +39,46 @@ $(document).ready(function(){
 		trigger:'click',
 		animation:'grow'
 	})
+	$('.tooltip-7').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+	$('.tooltip-8').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+	$('.tooltip-9').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+	$('.tooltip-10').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+	$('.tooltip-11').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+	$('.tooltip-12').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+		$('.tooltip-13').tooltipster({
+		position:'top',
+		trigger:'click',
+		animation:'grow'
+	})
+		$('.tooltip-14').tooltipster({
+		position:'bottom',
+		trigger:'click',
+		animation:'grow'
+	})
 
 
 
